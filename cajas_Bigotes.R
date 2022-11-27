@@ -21,6 +21,7 @@ consumo <- c(2.2, 7.6, 2.9, 4.6, 4.1, 3.9, 7.4, 3.2, 5.1, 5.3, 20.1, 2.3, 5.5, 3
 
 summary(consumo)
 
+#MEDIA
 mean(consumo)
 
 #DESVIACION ESTANDAR
