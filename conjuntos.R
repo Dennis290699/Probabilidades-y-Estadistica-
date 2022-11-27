@@ -1,54 +1,65 @@
-## TAREA 2 OPERACIONES CON CONJUNTOS
+# TAREA 2 OPERACIONES CON CONJUNTOS
 #INGRESAMOS LOS CONJUNTOS A TRABAJAR
 A<-c(4,6,8,10,12)
 B<-c(3,5,7,9)
 C<-c(4,7,5,11)
 
-#a) (AUB)
+#A) (AUB)
 union(A,B)
 
-#B) A INTERSECCION B
+#B) (A∩B)
 intersect(A,B)
 
-#c) AU(BUC)
+#C) AU(BUC)
 union(A, union(B,C))
-#d) BnC
+
+#D) (B∩C)
 intersect(B,C)
+
 #E) (AUB)UC
 union(union(A,B),C)
-#f) (AUB)n(CUB)
+
+#F) (AUB)∩(CUB)
 intersect(union(A,B),union(C,B))
-#G (AnC)UB
+
+#G) (A∩C)UB
 union(intersect(A,C),B)
-#H A-C
+
+#H) (A-C)
 setdiff(A,C)
-#I (AUB)-C
+
+#I) (AUB)-C
 setdiff(union(A,B),C)
-#PREGUNTA 3
-#A) AU(AnB)#A
-#se ingresa los conjuntos
+
+# PREGUNTA 3
+# SE INGRESA LOS CONJUNTOS
 U<-c(1,2,3,4)
 A<-c(1,3)
 B<-c(2,3)
-#usamos las funciones union e interseccion en la misma linea
+
+#A) AU(A∩B)=A
+# USAMOS LAS FUNCIONES UNION E INTERSECCION EN LA MISMA LINEA
 union(A,intersect(A,B))
+
 #B)(A-B)UB=AUB
 #PARTE IZQUIERDA
 union(setdiff(A,B),B)
-#PAETE DERECHA
+#PARTE DERECHA
 union(A,B)
+
 #C) (A-B)nB=vacio
 intersect(setdiff(A,B),B)
 
-#D (AUB)-(AnB) = A△B=(A-B)U(B-A)
-#probar derecha
+#D (AUB)-(A∩B) = A△B=(A-B)U(B-A)
+#PARTE DERECHA
 union(setdiff(A,B),setdiff(B,A))
-#PARTE IZQ
+#PARTE IZQUIERDA
 setdiff(union(A,B),intersect(A,B))
 #DIFERENCIA SIMETRICA ES DEFINIDA POR
 #A△B=(A-B)U(B-A)
 union(setdiff(A,B),setdiff(B,A))
 union(A,B)
-#fi nde tarrea 
+
+#FIN DE TAREA
 
 
