@@ -2,7 +2,7 @@
 library(readxl)
 
 # SETEAR O DIRECCIONAR A MI DIRECTORIO DE TRABAJO
-repositorio_datos <- "RUTA DEL ARCHIVO EXCEL"
+repositorio_datos <- "RUTA_DEL_ARCHIVO_EXCEL" # Ej:\\curso-R\\Manipulacion_Datos
 
 setwd(repositorio_datos)
 
