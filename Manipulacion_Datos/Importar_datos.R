@@ -2,8 +2,7 @@
 library(readxl)
 
 # SETEAR O DIRECCIONAR A MI DIRECTORIO DE TRABAJO
-repositorio_datos <- "C:\\Users\\fing.labcom\\Documents\\Probabilidad"
-
+repositorio_datos <- "RUTA DEL ARCHIVO EXCEL"
 
 setwd(repositorio_datos)
 
