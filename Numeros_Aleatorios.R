@@ -5,10 +5,9 @@ set.seed(1)
 n <- 10000
 x <- runif(n, -1, 1)
 y <- runif(n, -1, 1)
-indice <- (x^2+y^2 < 1)
+indice <- (x^2+y^2 <= 1)
 mean(indice)
 pi/4
-
 
 pi_aprox <- 4*mean(indice)
 pi_aprox
