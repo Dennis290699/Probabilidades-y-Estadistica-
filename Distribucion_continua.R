@@ -33,7 +33,7 @@ IC <- x_barra + z_alpha_medios * (s / sqrt(n))
 
 # Graficar la distribución de la muestra y la distribución normal estándar
 p1 <- ggplot(data.frame(muestra = muestra), aes(x = muestra)) +
-  geom_histogram(aes(y = ..density..), binwidth = 2, color = "black", fill = "white") +
+  geom_histogram(aes(y = after_stat(density)), binwidth = 2, color = "black", fill = "white") +
   geom_density(alpha = 0.2, fill = "#FF6666") +
   ggtitle("Distribución de la muestra") +
   xlab("Peso (kg)") +
