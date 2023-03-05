@@ -1,3 +1,10 @@
+# DITRIBUCION DISCRETA
+# Estamos interesados en conocer la altura promedio de estudiantes de una escuela 
+# secundaria. Para hacerlo, tomamos una muestra aleatoria de 100 estudiantes y 
+# registramos sus alturas en centímetros. Supongamos que la distribución de las 
+# alturas de los estudiantes en la población sigue una distribución discreta con 
+# media μ = 165 cm y desviación estándar σ = 8 cm.
+
 library(ggplot2)
 library(gridExtra)
 
