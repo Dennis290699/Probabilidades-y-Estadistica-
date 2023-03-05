@@ -36,6 +36,9 @@ x <- seq(mu - 4*sigma, mu + 4*sigma, length.out = 1000)
 y <- dnorm(x, mean = mu, sd = sigma)
 datos_normal <- data.frame(x, y)
 
+# Calcular el intervalo de confianza del 95%
+intervalo_confianza <- c(media_muestral - 1.96*error_estandar, media_muestral + 1.96*error_estandar)
+
 # Crear un gráfico de la distribución normal teórica
 p2 <- ggplot(datos_normal, aes(x = x, y = y)) +
   geom_line(color = "#69b3a2", size = 1.5) +
