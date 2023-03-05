@@ -27,6 +27,10 @@ z <- seq(-4, 4, length.out = 100)
 dnorm_z <- dnorm(z)
 data <- data.frame(z = z, dnorm_z = dnorm_z)
 
+# Calcular el intervalo de confianza al 95%
+z_alpha_medios <- qnorm(0.975)
+IC <- x_barra + z_alpha_medios * (s / sqrt(n))
+
 # Graficar la distribución de la muestra y la distribución normal estándar
 p1 <- ggplot(data.frame(muestra = muestra), aes(x = muestra)) +
   geom_histogram(aes(y = ..density..), binwidth = 2, color = "black", fill = "white") +
